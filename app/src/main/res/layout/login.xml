@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="Usuario:"
+        android:layout_marginTop="93dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="181dp"
+        android:layout_marginStart="181dp" />
+
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="Password:"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/tvLogin"
+        android:layout_alignStart="@+id/tvLogin" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLogin"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
+        android:layout_toEndOf="@+id/tvLogin"
+        android:layout_toRightOf="@+id/tvLogin"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvPass"
+        android:layout_alignEnd="@+id/etUsuario"
+        android:layout_alignRight="@+id/etUsuario"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="51dp"
+        android:text="Ingresar"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+</RelativeLayout>
